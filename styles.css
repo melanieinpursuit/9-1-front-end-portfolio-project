@@ -1,3 +1,85 @@
-html {
-    background-color: grey;
+* {
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Luminari;
+}
+
+body h1 {
+    background: #f5f6fa;
+    text-align: center;
+}
+
+body h2 {
+    background: #f5f6fa;
+    text-align: center;
+}
+
+body h3 {
+    background: #f5f6fa;
+    text-align: center;
+}
+
+.wrapper .sidebar{
+    background: lightcoral;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    padding: 20px 0;
+    transition: all 0.5s ease;
+}
+
+.navbar {
+    width: 100px;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 10px;
+    transition: all 0.5s;
+   -webkit-transition: all 0.5s;
+}
+
+.navbar div {
+    height: 5px;
+    background: #fff;
+    margin: 7px 0px 7px 0px;
+    border-radius: 25px;
+    transition: all 0.5s;
+   -webkit-transition: all 0.5s;
+   border: 2px solid black;
+}
+
+.one { 
+    width: 35px; 
+}
+
+.two { 
+    width: 50px;
+}
+
+.navbar:hover div { 
+    width: 60px;
+}
+
+.sidebar aside {
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+    padding: 15px 30px;
+}
+
+.sidebar a {
+   display: block;
+   padding: 13px 30px;
+   border-bottom: 2px solid black;
+   position: relative;
+}
+
+input {
+    float: right;
+}
+button {
+    float: right;
 }

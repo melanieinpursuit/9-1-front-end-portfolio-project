@@ -1,5 +1,4 @@
-const baseAPI = 'https://anapioficeandfire.com/api/characters/'
-
+const baseAPI = "https://thronesapi.com/api/v2/Characters"
 fetch(baseAPI)
 .then (res => res.json())
 .then (resJson => console.log(resJson))
