@@ -22,6 +22,12 @@ body h3 {
     text-align: center;
 }
 
+.catlink {
+    display: grid;
+    text-align: center;
+    grid-template-columns: 1fr;
+}
+
 .wrapper .sidebar{
     background: lightcoral;
     position: fixed;
@@ -72,7 +78,7 @@ body h3 {
 
 .sidebar a {
    display: block;
-   padding: 13px 30px;
+   padding: 15px 30px;
    border-bottom: 2px solid black;
    position: relative;
 }
