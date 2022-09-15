@@ -11,17 +11,27 @@ const characterSearch = document.querySelector(".character-data")
 /* Creating event listener for submit button. */
 form.addEventListener("submit", (event) => {
     
-    const characterInput = character.value
-    /* Variable to pick out the value of the character entered. */
-    const baseAPI = "https://thronesapi.com/api/v2/Characters"
-    /* Variable for API link. */
-
     event.preventDefault() /* Prevents page from refreshing after clicking search. */
-    form.reset() /* Resets the form after clicking search. */
+    
+    console.log(event.target.value)
+    
+    // let id
+
+    if (id.value.toLowerCase() === "daenerys targaryen" || id.value.toLowerCase() === "daenerys") {
+        id = 0   
+    } 
+
+    console.log(id)
+    
+    form.reset()
+    
+    /* Variable to pick out the value of the character entered. */
+    const baseAPI = `https://thronesapi.com/api/v2/Characters/${id}`
+    /* Variable for API link. */
+    console.log(baseAPI)
     
     fetch(baseAPI) /* Fetching info from API. */
     .then ((res) => res.json())
-    .then (resJson => console.log(resJson))
     .then ((result) => {
 
         let firstName = result.firstName.value
