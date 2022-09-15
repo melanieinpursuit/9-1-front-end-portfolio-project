@@ -6,13 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="character-sheet" href="./characters.css">
     <script src="characters.js" defer></script>
-    <title>Characters A-Z</title>
+    <title> Spoiler Free GoT - Characters A-Z </title>
 </head>
 <body>
-    <h1>Characters A-Z</h1>
-    <p>Search by House</p> <!-- Create hover with house list for this -->
-    <p>Search by Gender</p> <!-- Create hover with genders for this -->
-    <p>Search by Culture</p> <!-- Create hover with cultures for this -->
-    <a href="http://127.0.0.1:5500/index.html">Back To Home Page</a> 
+    <!-- HTML for Input Box & Submit Button -->
+    <header class="container">
+        <form>
+            <h1 class="site-name"> Spoiler Free GoT</h1>
+            <h2 class="category"> Characters A-Z </h2>
+            <a href="/index.html">Back To Home Page</a>    
+
+            <label for="characters"></label>
+            <input id="characters" name="characters" type="text" placeholder="search here...">
+            <input type="submit" value="Search">
+         </form>
+    </header>
+    <br>
+
+    <!-- HTML for Character Display -->
+    <div>
+        <main class="character-data">
+            <article class="character-search">
+                
+            </article>
+            <br>
+        </main>
+    </div>
 </body>
 </html>
