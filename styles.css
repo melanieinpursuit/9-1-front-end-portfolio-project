@@ -7,14 +7,46 @@
     font-family: Luminari;
 }
 
-body h1 {
-    background: #f5f6fa;
+.spoiler-free {
+    position: absolute;
+    right: 100px;
     text-align: center;
+    padding: 20px;
+    margin-right: 300px;
+    text-decoration: underline;
+    font-size: 100px;
 }
 
-body h2 {
-    background: #f5f6fa;
-    text-align: center;
+.got {
+    position: absolute;
+    font-size: 100px;
+    left: 670px;
+    margin-top: 100px;
+    text-decoration: underline;
+}
+
+.line-one {
+    position: absolute;
+    right: 50px;
+    bottom: 300px;
+    margin: 15px;
+    font-size: 19px;
+}
+
+.line-two {
+    position: absolute;
+    right: 50px;
+    bottom: 250px;
+    margin: 15px;
+    font-size: 19px;
+}
+
+.line-three {
+    position: absolute;
+    right: 50px;
+    bottom: 200px;
+    margin: 15px;
+    font-size: 19px;
 }
 
 body h3 {
@@ -84,8 +116,16 @@ body h3 {
 }
 
 input {
-    float: right;
+    position: absolute;
+    left: 1200px;
+    bottom: 680px;
+    height: 30px;
+    width: 175px;
 }
+
 button {
-    float: right;
+    position: absolute;
+    left: 1350px;
+    bottom: 680px;
+    height: 30px;
 }
