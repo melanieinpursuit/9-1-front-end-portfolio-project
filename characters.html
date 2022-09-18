@@ -21,16 +21,33 @@
             <input type="submit" value="Search">
          </form>
     </header>
-    <br>
 
     <!-- HTML for Character Display -->
     <div>
         <main class="character-data">
-            <article class="character-search">
-                
-            </article>
+            <div class="character-search">
+                <ul></ul>
+            </div>
             <br>
         </main>
     </div>
+
+    <script>
+        // fetch('https://thronesapi.com/api/v2/Characters')
+        // .then(response => {
+        //     return response.json()
+        // })
+        // .then(data => {
+        //     // console.log(data)
+        //     data.forEach(char => {
+        //         const eachCharName = `<li>${char.firstName} ${char.lastName}</li>`
+        //         const eachCharLastName = `<li>${char.lastName}</li>`
+        //         const eachCharTitle = `<li>${char.title}</li>`
+        //         document.querySelector('ul').insertAdjacentHTML("beforeend", eachCharName)
+        //         document.querySelector('ul').insertAdjacentHTML("beforeend", eachCharTitle)
+        //     })
+        // })
+        // .catch(error => console.log(error))
+    </script>
 </body>
 </html>
