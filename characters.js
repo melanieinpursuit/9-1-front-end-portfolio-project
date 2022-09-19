@@ -19,21 +19,19 @@ fetch('https://thronesapi.com/api/v2/Characters')
 .then(data => {
     console.log(data)
     data.forEach(char => {
-        const firstName = char.firstName
-        const lastName = char.lastName
         const fullName = char.fullName
         const title = char.title
         const family = char.family
         const image = char.imageUrl
 
-        // const charImg = document.createElement('p')
-        // charImg.innerHTML = img
+        const charImg = document.createElement('img')
+        charImg.setAttribute("src", image)
 
-        const charFirstName = document.createElement('p')
-        charFirstName.innerHTML = `<strong>First Name:</strong> ${firstName}`
+        // const charFirstName = document.createElement("p")
+        // charFirstName.innerHTML = `<strong>First Name:</strong> ${firstName}`
         
-        const charLastName = document.createElement("p")
-        charLastName.innerHTML = `<strong>Last Name:</strong> ${lastName}`
+        // const charLastName = document.createElement("p")
+        // charLastName.innerHTML = `<strong>Last Name:</strong> ${lastName}`
 
         const wholeName = document.createElement("p")
         wholeName.innerHTML = `<strong>Full Name:</strong> ${fullName}`
@@ -44,14 +42,28 @@ fetch('https://thronesapi.com/api/v2/Characters')
         const famName = document.createElement("p")
         famName.innerHTML = `<strong>House Name:</strong> ${family}`
 
-        characterSearch.append(charFirstName, charLastName, wholeName, charTitle, famName)
+        characterSearch.append(charImg, wholeName, charTitle, famName)
+        
+        form.addEventListener("submit", (event) => {
+            
+            event.preventDefault() /* Prevents page from refreshing after clicking search. */
+            
+            let input = event.target.characters.value
+            data.filter(char => {
+        
+            if (input === char.firstName) {
+                console.log(char.firstName)
+        
+                wholeName.innerHTML = `<strong>Full Name:</strong> ${fullName}`
+        
+                charTitle.innerHTML = `<strong>Title:</strong> ${title}`
+        
+                famName.innerHTML = `<strong>House Name:</strong> ${family}`
+        }})
+
+            form.reset()
     })
 })
-
-/* Creating event listener for submit button. */
-form.addEventListener("submit", (event) => {
-    
-    event.preventDefault() /* Prevents page from refreshing after clicking search. */
-    
-    form.reset()
 })
+
+// Make it so w

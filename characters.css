@@ -1,5 +1,5 @@
-.character-data .character-search {
-    display: grid;
-    grid-template-columns: 1fr;
-    background-color: aqua;
+h1 {
+    font-family: Luminari;
+    text-align: center;
+    font-size: larger;
 }
