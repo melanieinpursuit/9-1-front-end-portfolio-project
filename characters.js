@@ -88,7 +88,9 @@ form.addEventListener("submit", (event) => {
 form.reset()
 })
 
-resetButton.addEventListener("click", () => {
+resetButton.addEventListener("click", (event) => {
+    event.preventDefault()
+    characterSearch.innerHTML = ""
     populateCharacters()
     console.log("test")
 })
