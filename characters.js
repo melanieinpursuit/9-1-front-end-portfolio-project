@@ -92,5 +92,5 @@ resetButton.addEventListener("click", (event) => {
     event.preventDefault()
     characterSearch.innerHTML = ""
     populateCharacters()
-    console.log("test")
+    // console.log("test")
 })
