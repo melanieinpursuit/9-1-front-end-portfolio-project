@@ -1,6 +1,5 @@
 body {
     background-color: seagreen;
-    text-align: center;
 }
 
 h1 {
@@ -30,5 +29,8 @@ p {
     height: auto;
     background-color: white;
     border: 2px solid black;
+}
+
+ul {
     text-align: center;
 }
