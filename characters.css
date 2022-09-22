@@ -1,5 +1,6 @@
 body {
-    background-color: seagreen;
+    background-color: grey;
+    background-image: url(depositphotos_185876636-stock-photo-stone-wall-medieval-castle-masonry.jpeg);
 }
 
 h1 {
@@ -7,11 +8,26 @@ h1 {
     text-align: center;
     font-size: 50px;
     text-decoration: underline;
+    background-color: white;
+    border: 2px solid black;
 }
 
 h2 {
     font-family: Luminari;
     text-decoration: underline;
+    background-color: white;
+    border: 2px solid black;
+    padding: 20px;
+    text-align: center;
+}
+
+#characters {
+    text-align: center;
+}
+
+form a {
+    background-color: white;
+    border: 2px solid black;
 }
 
 img {
