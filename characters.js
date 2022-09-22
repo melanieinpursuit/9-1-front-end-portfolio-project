@@ -10,6 +10,8 @@ const characterSearch = document.querySelector(".character-data")
 
 const resetButton = document.querySelector("button")
 
+const searchResults = document.querySelector(".results")
+
 // let allCharacters = [];
 
 const origAPI = "https://thronesapi.com/api/v2/Characters"
@@ -62,7 +64,7 @@ form.addEventListener("submit", (event) => {
     console.log(input)
     allCharData.forEach(char => {
         // console.log(char.fullName)
-    if (char.fullName.toLowerCase().includes(input.toLowerCase())) {
+    if (char.fullName.toLowerCase().includes(input.toLowerCase())) { // Fave piece of code.
         const fullName2 = char.fullName
         const title2 = char.title
         const family2 = char.family
@@ -89,8 +91,8 @@ form.reset()
 })
 
 resetButton.addEventListener("click", (event) => {
+    searchResults.innerHTML = ""
     event.preventDefault()
-    characterSearch.innerHTML = ""
     populateCharacters()
     // console.log("test")
 })
